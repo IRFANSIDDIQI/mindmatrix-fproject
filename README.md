@@ -1,70 +1,68 @@
-# 🐏 Grama-Vaxi — Livestock Health & Vaccination Passport
-**MindMatrix VTU Internship Program** | **Project Title: 98**
+# 🐑 Grama-Vaxi — Digital Livestock Health Card & AI Assistant
 
-An Android-based "Digital Health Card" designed for rural livestock farmers. It tracks the vaccination lifecycle of sheep, goats, and cattle, sends automated camp alerts, and provides AI-powered disease diagnostics to prevent livestock loss.
+> **MindMatrix VTU Internship Program** | **Project Title:** 23
+> *An AI-powered web ecosystem engineered for rural environments to track livestock life cycles, secure community herd health, and bridge communication gaps with automated, localized alerting.*
 
 ---
 
 ## 📱 Features
 
-| Feature | Description |
-| :--- | :--- |
-| **🐏 Animal Ledger** | Register animals with photo, breed, age, and unique ID tracking. |
-| **📅 Vaccine Calendar** | Automatically generates "Next Shot" dates and tracks medical history. |
-| **🔔 Camp Alerts** | Smart notifications for government vaccination camps arriving in the village. |
-| **🤖 AI Disease Alert** | Integrated Gemini AI to analyze symptoms and provide first-aid advice. |
-| **🌐 Multilingual** | Full support for **Kannada** and English to serve rural populations. |
-| **📴 Offline First** | Built with Room DB to ensure functionality in areas with poor connectivity. |
-| **🚀 Reliable Alerts** | Uses WorkManager for background notifications even if the app is closed. |
+* **🐾 Animal Ledger:** Register local village livestock with an intuitive, highly visual, icon-driven interface designed intentionally for rural accessibility.
+* **📅 Vaccine Calendar & Alerts:** Automated tracking workflows that calculate **"Next Shot"** targets and broadcast persistent camp timelines (e.g., *“Doctor arriving at Temple Square tomorrow”*).
+* **🧠 GenAI Disease Analysis:** Fully integrated with the **Gemini 1.5 Flash API** to handle real-time symptom logging and deliver immediate first-aid/triage recommendations.
+* **📊 Health Trends Dashboard:** High-density, interactive **Bento-style grids** displaying real-time regional livestock populations and historical vaccine coverage metrics.
+* **🌐 Localized UI Architecture:** Built-in localization architecture with comprehensive **Kannada language support** to systematically remove technical and language barriers for farmers.
 
 ---
 
-## 🏗️ Tech Stack
-*   **Language:** Kotlin
-*   **Database:** Room (SQLite) for local persistence
-*   **Background Tasks:** WorkManager API
-*   **AI Engine:** Google Gemini API (via Secure Server Proxy)
-*   **Architecture:** MVVM (Model-View-ViewModel)
-*   **UI/UX:** Material Design 3 with custom high-contrast animal icons
+## 🏗️ Technical Stack Breakdown
+
+| Layer | Technology Used | Purpose |
+| --- | --- | --- |
+| **Frontend** | `React 19` + `TypeScript` | Houses core application logic, strict state boundaries, and explicit type safety. |
+| **Styling** | `Tailwind CSS 4.0` | Powers the modular bento layout systems, custom fluid margins, and responsive grids. |
+| **Animations** | `Motion (Framer Motion)` | Drives organic, ultra-smooth visual transitions when navigating between the Ledger and Dashboard. |
+| **Visuals** | `Recharts` | Renders lightweight, scalable canvas tracking for animal demographic and coverage data. |
+| **Backend** | `Express.js` | Functions as a dedicated local server proxy layer to keep production API integrations secure. |
+| **AI / ML** | `Gemini 1.5 Flash` | Handles natural language prompt pipelines to deliver instantaneous veterinary triage summaries. |
+| **Icons** | `Lucide-React` | Delivers high-contrast, universally recognizable visual indicators for non-text navigation. |
 
 ---
 
-## 🚀 How to Run (Android Studio)
-1.  **Clone this repo:** `git clone https://github.com/yourusername/grama-vaxi.git`
-2.  **Open in Android Studio:** Use version **Hedgehog** or later.
-3.  **GEMINI_API_KEY:** Add your API key to `local.properties` or environment variables.
-4.  **Gradle Sync:** Wait for the project to sync all dependencies (Room, WorkManager, GenAI SDK).
-5.  **Run:** Select an emulator (Min API 26) or connect a physical device and click **Run**.
+## 🚀 How to Run
+
+**open terminal then**
+`cd (file name)`
+`npm install`
+`npm run dev`
+
+> 💡 **System Note:** Launch your local browser instance and map to `http://localhost:3000`. Toggle or verify layout components to inspect standard responsive breakpoints and Kannada string file adjustments.
 
 ---
 
 ## 📂 Project Structure
+
 ```text
-/android_source/    → Full Kotlin code for Android Studio
-├── AndroidManifest.xml
-├── java/
-│   ├── data/       → Room Database & Entity
-│   ├── ui/         → MainActivity & ViewModel
-│   ├── worker/     → WorkManager Alerts
-│   └── repository/ → Data Source Logic
-└── res/
-    └── values-kn/  → Kannada Language Support
+Grama-Vaxi/
+├── 📁 src/                  # Frontend Source Code Layer
+│   ├── App.tsx             # Main Layout Core, View Routers, & State Synchronization
+│   ├── main.tsx            # Application Compilation Entry Point
+│   ├── types.ts            # Explicit Data Blueprint Models (Animals, Alerts, Logs)
+│   └── index.css           # Custom Typography Imports & Bento Grid Layout Tokens
+├── 📁 dist/                 # Static Production Target Output (Auto-Generated)
+├── server.ts               # Backend Express Server Engine (Secures Gemini Proxies & Routing)
+├── package.json            # Framework Dependencies, Config Meta, & Execution Scripts
+├── tsconfig.json           # Global Compiler Directives for TypeScript Strict Enforcement
+├── vite.config.ts          # Core Asset Bundler Optimization Pipelines
+├── .env                    # Target Environment Variables & Protected Application Credentials
+└── PROJECT_REQUIREMENTS.md # Internship Compliance Guidelines & Project Scope Checklists
+
 ```
-
-## 🚀 How to Run in Android Studio
-1. **Download the project** as a ZIP file.
-2. **Open Android Studio**, create a New Project (Empty Views Activity).
-3. **Copy the contents** of `/android_source/java/` to your project's `java` folder.
-4. **Copy the contents** of `/android_source/res/` to your project's `res` folder.
-5. **Update your build.gradle.kts** with the dependencies listed in `ANDROID_STUDY_GUIDE.md`.
-6. **Press Run.**
-
-*   **Livestock Wealth:** Preventing animal loss, which acts as the "Savings Account" for rural families.
-*   **Animal Welfare:** Ensuring 100% timely medical care for the rural cattle population.
-*   **Health Digitization:** Creating a reliable database of village animal health for local officials.
-*   **Rural Empowerment:** Bringing precision technology and AI to the fingertips of small-scale farmers.
 
 ---
 
-## 📄 License
-Copyright © 2026 Grama-Vaxi Team. Built for the VTU Internship Program.
+## 🎯 Impact Goals
+
+* **🛡️ Protecting Livestock Wealth:** Drastically lowering localized animal mortality rates during unexpected outbreaks to protect the essential "living savings accounts" of rural farming communities.
+* **🩺 Elevating Animal Welfare Standards:** Streamlining day-to-day access to accurate, AI-backed veterinary health triage insights while striving for **100% regional vaccination coverage**.
+* **📊 Accelerating Rural Digitization:** Migrating traditional, easily missed loudspeaker schedules or paper tracking frameworks into an instantly accessible, visual ledger system.
