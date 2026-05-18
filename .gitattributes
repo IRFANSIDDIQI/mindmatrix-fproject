@@ -8,6 +8,4 @@ server.ts linguist-language=HTML
 # 3. Turn the TypeScript models file into CSS to pad the CSS bar
 src/types.ts linguist-language=CSS
 
-# 4. Make sure actual HTML and CSS are forced to show up
-*.html linguist-detectable=true
-*.css linguist-detectable=true
+
