@@ -1,11 +1,9 @@
-# 1. Turn your main frontend UI logic into Kotlin (gives you the ~60% majority)
-src/App.tsx linguist-language=Kotlin
-src/main.tsx linguist-language=Kotlin
+# Force GitHub to see TypeScript React files as Kotlin
+*.tsx linguist-language=Kotlin
 
-# 2. Turn the backend server file into HTML to pad the HTML bar
-# server.ts linguist-language=HTML
+# Force GitHub to see standard TypeScript files as Java
+*.ts linguist-language=Java
 
-# 3. Turn the TypeScript models file into CSS to pad the CSS bar
-# src/types.ts linguist-language=CSS
-
-
+# Ignore HTML and CSS so they don't mess up your percentages
+*.html linguist-detectable=false
+*.css linguist-detectable=false
