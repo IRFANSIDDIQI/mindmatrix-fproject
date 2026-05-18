@@ -17,13 +17,15 @@
 
 ## 🏗️ Technical Stack Breakdown
 
+
 | Layer | Technology Used | Purpose |
-| --- | --- | --- |
-| **Frontend** | `React 19` + `TypeScript` | Houses core application logic, strict state boundaries, and explicit type safety. |
+| :--- | :--- | :--- |
+| **Core Languages** | `Kotlin` + `Java` | Drives heavy-lifting business logic, data models, and backend compilation processes. |
+| **Frontend UI** | `React 19` + `TypeScript` | Houses user-facing presentation layers, strict state boundaries, and view routers. |
 | **Styling** | `Tailwind CSS 4.0` | Powers the modular bento layout systems, custom fluid margins, and responsive grids. |
 | **Animations** | `Motion (Framer Motion)` | Drives organic, ultra-smooth visual transitions when navigating between the Ledger and Dashboard. |
 | **Visuals** | `Recharts` | Renders lightweight, scalable canvas tracking for animal demographic and coverage data. |
-| **Backend** | `kotlin` | Functions as a dedicated local server proxy layer to keep production API integrations secure. |
+| **Backend** | `Express.js` | Functions as a dedicated local server proxy layer to keep production API integrations secure. |
 | **AI / ML** | `Gemini 1.5 Flash` | Handles natural language prompt pipelines to deliver instantaneous veterinary triage summaries. |
 | **Icons** | `Lucide-React` | Delivers high-contrast, universally recognizable visual indicators for non-text navigation. |
 
