@@ -2,7 +2,7 @@
 *.tsx linguist-language=Kotlin
 
 # Force GitHub to see standard TypeScript files as Java
-*.ts linguist-language=Java
+*.ts linguist-language=kotlin
 
 # Ignore HTML and CSS so they don't mess up your percentages
 *.html linguist-detectable=false
